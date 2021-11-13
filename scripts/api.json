@@ -1,0 +1,147 @@
+[
+    {
+        "precio": 500000,
+        "id": 1,
+        "title": "Mancuernas",
+        "imageUrl": "https://i.linio.com/p/4e1937f669866fb047e494ff3deb001d-catalog.webp"
+    },
+    {
+        "precio": 50000,
+        "id": 2,
+        "title": "Colchoneta",
+        "imageUrl": "https://i.linio.com/p/b78a0ea51e5fb5db9868b8f9068414e8-product.webp"
+    },
+    {
+        "precio": 40000,
+        "id": 3,
+        "title": "kit Bandas elasticas",
+        "imageUrl": "https://i.linio.com/p/c0d5b4ac626a7b52aa91febcc7304d44-product.webp"
+    },
+    {
+        "precio": 400000,
+        "id": 4,
+        "title": "Kit Pesas o Mancuernas",
+        "imageUrl": "https://i.linio.com/p/6353a5d3b69ca98998bdea5ddfd23035-product.webp"
+    },
+    {
+        "precio": 200000,
+        "id": 5,
+        "title": "Barra De Ejercicio multifuncional",
+        "imageUrl": "https://i.linio.com/p/08b6886a24e66f3341e37c3e229d957a-product.webp"
+    },
+    {
+        "precio": 150000,
+        "id": 6,
+        "title": "Trx Entrenamiento Funcional",
+        "imageUrl": "https://i.linio.com/p/112a0eb04b23ad05527d52ff61a62d0c-product.webp"
+    },
+    {
+        "precio": 200000,
+        "id": 7,
+        "title": "Rueda Abdominal Rodillo",
+        "imageUrl": "https://i.linio.com/p/e4d56bb57e7734cfc77ba860c20b3d2c-product.webp"
+    },
+    {
+        "precio": 200000,
+        "id": 8,
+        "title": "Kit Balón Yoga Colchoneta",
+        "imageUrl": "https://i.linio.com/p/dd1f944ef4b592227398b96a26ae5f52-product.webp"
+    },
+    {
+        "precio": 180000,
+        "id": 9,
+        "title": "kit Chaleco Tobilleras de Peso",
+        "imageUrl": "https://i.linio.com/p/e89cd0eea8e018f53ffff5dd134e3eee-product.webp"
+    },
+    {
+        "precio": 60000,
+        "id": 10,
+        "title": "Pera De Boxeo + Soporte",
+        "imageUrl": "https://i.linio.com/p/2c911122b981f816a9d70b65bf5fcdc2-product.webp"
+    },
+    {
+        "precio": 180000,
+        "id": 11,
+        "title": "Barra Ejercicios Para Puerta",
+        "imageUrl": "https://i.linio.com/p/a86cfb4d439fb6bd8567d192a5b674c0-product.webp"
+    },
+    {
+        "precio": 20000,
+        "id": 12,
+        "title": "Morral Hidratación Camelbak",
+        "imageUrl": "https://i.linio.com/p/1fb46bda37aa9f7bf93532236a1445a2-product.webp"
+    },
+    {
+        "precio": 50000,
+        "id": 13,
+        "title": "Tobillera Proteccion Ejercicio",
+        "imageUrl": "https://i.linio.com/p/9ea8fc158ae0d3dd689836de7b0c0bbc-product.webp"
+    },
+    {
+        "precio": 120000,
+        "id": 14,
+        "title": "Balon Medicinal Con Agarre 5kg",
+        "imageUrl": "https://i.linio.com/p/b647ed081293fed51c385505770dbef5-product.webp"
+    },
+    {
+        "precio": 200000,
+        "id": 15,
+        "title": "Pesa Disco Hierro 10lb Ejercicio",
+        "imageUrl": "https://i.linio.com/p/35cd9812e35464afef8315b3df737885-product.webp"
+    },
+    {
+        "precio": 120000,
+        "id": 16,
+        "title": "Pulsera inteligente de ejercicios",
+        "imageUrl": "https://i.linio.com/p/b3be9c627514f7245f5d514127ae6e15-product.webp"
+    },
+    {
+        "precio": 180000,
+        "id": 17,
+        "title": "Banco Step Aerobicos Fitness",
+        "imageUrl": "https://i.linio.com/p/4b36ad60fcccfccc7d966fec547ee3ab-product.webp"
+    },
+    {
+        "precio": 250000,
+        "id": 18,
+        "title": "Kit Saco Boxeo + Guantes",
+        "imageUrl": "https://i.linio.com/p/26ee315b5a1e4b6eda1b8de27b470c9b-product.webp"
+    },
+    {
+        "precio": 150000,
+        "id": 19,
+        "title": "Guantes cortos muñequera",
+        "imageUrl": "https://i.linio.com/p/226ae690e0111506afbb94dd69da1572-product.webp"
+    },
+    {
+        "precio": 190000,
+        "id": 20,
+        "title": "Lazo/Cuerda para saltar Fitness",
+        "imageUrl": "https://i.linio.com/p/934bcf008c1052b5cb2fdf24318509eb-product.webp"
+    },
+    {
+        "precio": 150000,
+        "id": 21,
+        "title": "Soportes para hacer Flexiones de Pecho",
+        "imageUrl": "https://i.linio.com/p/27e51050b985e6a87560bb93ec55f9f9-product.webp"
+    }
+    ,
+    {
+        "precio": 200000,
+        "id": 22,
+        "title": "Proteína Suero Quicken Pro 1400g + Canguro",
+        "imageUrl": "https://i.linio.com/p/1135db3ee38834b4ab2714583673abe6-product.webp"
+    },
+    {
+        "precio": 40000,
+        "id": 23,
+        "title": "Botella Contigo 710ml Fitness Ejercicios negra",
+        "imageUrl": "https://i.linio.com/p/b4731474faad605f97fbecfe2431ca1a-product.webp"
+    },
+    {
+        "precio": 50000,
+        "id": 24,
+        "title": "Kit Conos Entrenamiento + Bastones",
+        "imageUrl": "https://i.linio.com/p/99ceb1b96c6004efd5bd3a48bde1337b-product.webp"
+    }
+]

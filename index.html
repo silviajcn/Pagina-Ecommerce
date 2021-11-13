@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!--CSS carrusel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Deportes Store</title>
+</head>
+
+<body>
+
+
+    <!-------------------------cabecera de la pagina--------------------------->
+    <header class="container-fluid bg-black position-sticky top-0">
+    
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <div class="container-fluid">
+    
+                <!--Logo de la pagina-->
+                <a class="navbar-brand" href="#"><i class="fas fa-dumbbell"></i> Deportes Store</a>
+    
+                <div class="nav nav-pills">
+    
+                    <ul class="nav nav-pills py-3 container-fluid" id="pills-tab" role="navigation">
+    
+                        <!--Pagina principal-->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Productos</a>
+                        </li>
+    
+                        <!--Pagina de carrito-->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-contact-tab carrito" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false"><i class="fas fa-shopping-cart"></i> Mi Carrito</a>
+                        </li>
+    
+                        <!--Registro en la pagina-->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                                    class="fas fa-user"></i> Registrate</a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+    
+            </div>
+        </nav>
+    
+    </header>
+
+
+
+    <!---------------------------Cuerpo de la pagina---------------------------->
+    <div class="tab-content contenido_principal" id="pills-tabContent">
+    
+        <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <h2 class="h4 m-4 text-primary text-center">Nuestros productos</h2>
+    
+            
+    
+            <!--=====================Pagina principal tarjetas de productos========================-->
+            <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 bg-black" id="contenedor_productos"></div>
+
+                <div id="principal">
+                    <!--Muestra de tarjeta de productos-->
+                    <div class="col d-flex justify-content-center mb-4 pelis">
+                        <div class="card shadow mb-1 bg-dark rounded text-white" >
+    
+    
+                        </div>
+                    </div>
+                </div>
+
+                <!--Template productos en cards-->
+                <template id="template_productos">
+                    <div class="col-12 col-md-4 mb-3">
+                        <div class="card bg-black text-white border-primary">
+                            <img src="" class="card-img-top" alt="..." id="imagenProduct">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">Precio: $<span></span>
+                                </p>
+                                <button href="#" class="btn btn-primary" type="button" id="boton"><i class="fas fa-shopping-cart"></i>
+                                    Añadir a Mi Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <!--Template productos en cards-->
+
+
+                <!-------------------------CAROUSEL de imagenes. Nuevos p roductos--------------------------->
+                <h2 class="h4 m-4 text-primary text-center">Próximamente en Deportes Store</h2>
+                
+                <div class="carousel">
+                    <div class="carousel__contenedor">
+                        <button class="carousel__anterior"  aria-label="anterior">
+                            <i class="fas fa-angle-left"></i>
+                        </button>
+
+                        <div class="carousel__lista">
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/ead4c709dafbb7ecb9b1c6689e3f1dcc-product.webp" alt="">
+                                <p>Bicicleta Estatica Spinning Gimnasio</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/262499d0e2fddd80bdfd69f28fa22243-product.webp" alt="">
+                                <p>Caminadora Trotadora Plegable Residencial Banda Electrica</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/0961b5fcd82f39907a731bfc5434c075-product.webp" alt="">
+                                <p>Plataforma Vibratoria de ejercicios con bandas</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/c7757c1f070ee40e38f74a43c9057466-product.webp" alt="">
+                                <p>Maquina Tv Ab Vertical Abdominales Five Shapers 5 Minutos</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/81760ede816eb68ed80a99fec2eef0f7-product.webp" alt="">
+                                <p>Kit Push Up Rueda Abdominal Lazo Para Saltar Set Ejercicio</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/cf2198687b9046411a90e29749beba0c-product.webp" alt="">
+                                <p>Banco de Pesas Multifuncional</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/753bf277b5e540009aea8fc22f0e889c-product.webp" alt="">
+                                <p>Elíptica 10 en 1 con espaldar,escalador y bandas de estiramiento</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/5b77026fb2f43a8cb62ea0e099e1bfd6-product.webp" alt="">
+                                <p>Kit Pesas Mancuernas 50 Kilos 100 Libras Gimnasio Ejercicio</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/6f0d9edba9d1079024c21562b09a820b-product.webp" alt=""">
+                                <p>Barra de Ejercicio Multifuncional + Saco Boxeo</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/44646ae7039457919e191a74ca9b309e-product.webp" alt="">
+                                <p>COMBO Bandas Elásticas Resistencia Tobulares Bandas Planas</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/506c5a94da38a851ff9ce35c462d8e76-product.webp" alt="">
+                                <p>Banco Mancuernas Abdomen Pesas Gimnasio Fitness Techno</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/4b519e9c4f7c7b6f714e59b0f4774cc0-product.webp" alt="">
+                                <p>Tenis Running Skechers Summits - Gris-Aguamarina</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/9f4539829dc17a3c80518eabc8b23642-product.webp" alt="">
+                                <p>AB-Slider WT 7401 60083 Sport Fitness</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/385fc09c1a7cad31d453c088e9fa9fd0-product.webp" alt="">
+                                <p>Bicicleta Gw Zebra Rin 29 Shimano 7 Vel. Aluminio Disco Bloqueo</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="https://i.linio.com/p/da43d6879946a7422507e571c4d665de-product.webp" alt="">
+                                <p>Kit seguridad Casco Gw Hornet Bicicleta + Guantes + Luces Gw + Guaya Gw</p>
+                            </div>
+                        </div>
+
+
+                        <button class="carousel__siguiente" aria-label="siguiente">
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+                    </div>
+
+                    <div role="tablist" class="carousel__indicadores"></div>
+                </div>
+
+
+        </div>
+    
+        <!----------------------------Contenido carrito de compras-------------------------------->
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <h2 class="h4 m-4 text-primary text-center">Mi carrito de compras</h2>
+    
+            <!--tabla carrito de compras-->
+            <div class="my-5">
+                
+                <table class="table table-dark table-striped container">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Acción</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items"></tbody>
+                    <tfoot>
+                        <tr id="footer_carrito">
+                            <th scope="row" colspan="5">Carrito vacío ¡Comienza a comprar!</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <!--tabla carrito de compras-->
+             
+    
+        </div>
+
+        <!--templates para la tabla productos en el carrito-->
+        <template id="template_footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar_carrito">
+                    Vaciar Carrito
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+        
+        <template id="template_carrito">
+            <tr>
+                <th scope="row">id</th>
+                <td>Café</td>
+                <td>1</td>
+                <td>
+                    <button class="btn btn-info btn-sm">
+                        +
+                    </button>
+                    <button class="btn btn-danger btn-sm">
+                        -
+                    </button>
+                </td>
+                <td>$ <span>500</span></td>
+            </tr>
+        </template>
+        <!--templates para la tabla productos en el carrito-->
+    
+    
+        <!-------------------------------Formulario de registro------------------------------------>
+        <div class="tab-pane fade container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <h2 class="h4 m-4 text-primary text-center">Registrate</h2>
+            
+            <!--Formulario-->
+            <div class="container_form d-flex justify-content-center">
+                <form id="formulario" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="exampleInputEmail1" class="form-fName">Nombres:</label>
+                        <input type="text" class="form-control" id="fname" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleInputEmail1" class="form-lName">Apellidos:</label>
+                        <input type="text" class="form-control" id="lname" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleInputEmail1" class="form-phone">Celular:</label>
+                        <input type="tel" class="form-control" id="tel" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleInputEmail1" class="form-email">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+    
+    
+                    <div class="mb-2">
+                        <label for="exampleInputPassword1" class="form-pasword">Contraseña:</label>
+                        <input type="password" class="form-control" id="clave">
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <label class="form-check-label" for="exampleCheck1">Me gustaría recibir comunicaciones promocionales (Recibirás un e-mail de confirmación).</label>
+                        <input type="checkbox" class="form-check-input" id="check1">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary col-md-3" id="enviar">Completar registro</button>
+                </form>
+    
+            </div>
+            <br>
+
+            <p class="text-white text-center">Al crear una cuenta, aceptas las Condiciones de Uso y el Aviso de Privacidad de deportesstore.com.</p>
+    
+    
+        </div>
+
+
+    
+    </div>
+
+
+
+
+
+
+    <!--Pie de pagina-->
+    <footer class="bg-black p-3 mt-5">
+        <p class="text-center m-0 text-primary"><i class="fas fa-dumbbell"></i> Deportes Store</p>
+    </footer>
+
+
+    <!--Script bootstrap-->
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <!--Script para hacer carrusel con la libreria Glider.js: https://nickpiscitelli.github.io/Glider.js/-->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <!--Iconos en: https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free -->
+    <script src="https://kit.fontawesome.com/4988136917.js" crossorigin="anonymous"></script>
+
+    
+    <!--Script index-->
+    <script src="scripts/index.js"></script>
+    <!--Script carrusel-->
+    <script src="scripts/carousel.js"></script>
+    <!--Script del formulario-->
+    <script src="scripts/form.js"></script>
+
+    
+</body>
+
+</html>

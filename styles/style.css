@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fondo de la pagina*/
+body{
+    background: black;
+}
+
+/*Posicionar cabecera sobre los demas elementos de la pagina*/
+header{
+    z-index: 100;
+}
+
+
+/*Cards productos*/
+
+#boton:hover{
+    background: #0d6efd;
+}
+
+
+/*Formulario de resgistro*/
+form{
+    color: white;
+}
+
+
+
+
+/*------------------------- Contenedor del carrusel---------------------------------*/
+
+.carousel__contenedor {
+    position: relative;
+}
+
+/*Borde de imagenes*/
+.carousel__elemento {
+    border: solid black;
+}
+
+/*Efecto hover en imagenes*/
+.carousel__elemento img:hover{
+    transform:scale(1.2);
+}
+
+/* Flechas izquierda/derecha */
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 55px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: white;
+    opacity: 50%;
+    font-size: 30px;
+} 
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+    opacity: 100%;
+}
+
+.carousel__anterior {
+    left: -30px;
+}
+
+.carousel__siguiente {
+    right: -30px;
+}
+
+
+/*Quitar scroll para que no se vea en navegador FireFox*/
+.carousel__lista {
+    overflow: hidden;
+}
+
+
+/*Indicadores de pagina del carousel*/
+.carousel__elemento {
+    text-align: center;
+    color: white;
+}
+
+.carousel__indicadores .glider-dot {
+   display: block;
+   opacity: .2;
+   background: white;
+}
+
+.carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+    opacity: 1;
+}
+
+
+/*Diseño responsive*/
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido_principal {
+		flex-direction: column;
+	}
+
+	.contenido_principal > * {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+     #contenedor_productos > * {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+     #contenedor_productos > * {
+        width: 50%;
+    }
+}
